@@ -1,0 +1,11 @@
+{
+  "mouse": {
+    "dpi": 800,
+    "sens": 0.32,
+    "scoped": 1.1,
+    "ads": 1,
+    "eDPI": 256,
+    "windows-sens": 6,
+    "raw-input": "on"
+  }
+}

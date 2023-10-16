@@ -9,24 +9,24 @@ const config = {
   output: {
     path: _resolve(__dirname, "public"),
     filename: "bundle.js",
-    publicPath: "/public/"
+    publicPath: "/public/",
   },
   devServer: {
     hot: true,
     publicPath: "/public/",
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"],
     alias: {
       react: "preact-compat",
-      "react-dom": "preact-compat"
-    }
+      "react-dom": "preact-compat",
+    },
   },
   stats: {
     colors: true,
     reasons: true,
-    chunks: false
+    chunks: false,
   },
   plugins: [new HotModuleReplacementPlugin(), new NamedModulesPlugin()],
   module: {
@@ -35,15 +35,15 @@ const config = {
         enforce: "pre",
         test: /\.jsx?$/,
         loader: "eslint-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.jsx?$/,
         loader: "babel-loader",
-        include: [_resolve("js"), _resolve("node_modules/preact-compat/src")]
-      }
-    ]
-  }
+        include: [_resolve("js"), _resolve("node_modules/preact-compat/src")],
+      },
+    ],
+  },
 };
 
 if (process.env.NODE_ENV === "development") {

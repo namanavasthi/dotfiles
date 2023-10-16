@@ -1,0 +1,31 @@
+{
+  "adjustments": {
+    "tournament": {
+      "base": 0,
+      "height": 2,
+      "tilt": 15
+    },
+    "home": {
+      "base": 0,
+      "height": 0,
+      "tilt": 0
+    },
+    "scrim": {
+      "base": 0,
+      "height": 0,
+      "tilt": 20
+    }
+  },
+  "profile": {
+    "valorant": {
+      "brightness": "depends on room",
+      "contrast": 55,
+      "sharpness": 7,
+      "gamma": 60,
+      "color": "normal",
+      "ama": "high",
+      "DyAc": "hight",
+      "black-eq": 10
+    }
+  }
+}
